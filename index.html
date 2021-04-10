@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="header">
+        <img id="logo" src="./images/logo.svg" alt="logo" />
+        <div class="header-second">
+          <p>score</p>
+          <span class="span">0</span>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="center-main">
+        <img src="./images/bg-triangle.svg" alt="" />
+
+        <img
+          class="circle circle-1 img-1"
+          src="./images/icon-paper.svg"
+          alt="paper"
+        />
+
+        <img
+          class="circle circle-2 img-2"
+          class="img-2"
+          src="./images/icon-spock.svg"
+          alt="spock"
+        />
+
+        <img
+          class="circle circle-3 img-3"
+          class="img-3"
+          src="./images/icon-rock.svg"
+          alt="rock"
+        />
+      </div>
+    </main>
+    <div class="rules hidden">
+      <div class="rules-flex">
+        <p>RULES</p>
+        <img id="img" src="./images/icon-close.svg" alt="" />
+      </div>
+      <img src="./images/image-rules.svg" alt="" />
+    </div>
+    <div class="result-container">
+      <div class="first-player">
+        <h2>YOU PICKED</h2>
+      </div>
+
+      <div class="win--again">
+        <h1>nope</h1>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+
+      <div class="second-player">
+        <h3>THE computer PICKED</h3>
+      </div>
+    </div>
+    <div class="rules-footer">
+      <button class="rules-btn"><p>RULES</p></button>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>
