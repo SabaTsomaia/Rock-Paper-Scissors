@@ -47,6 +47,9 @@ const choosingWinner = function () {
     secondPlayer.lastElementChild.classList.contains("img-2")
   ) {
     wlText.innerHTML = "You lose!";
+    body.style.backgroundColor = "red";
+    body.style.backgroundImage =
+    "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(0, 93%, 44%) )";
   } else if (
     firstPlayer.lastElementChild.classList.contains("img-2") &&
     secondPlayer.lastElementChild.classList.contains("img-1")
@@ -54,11 +57,16 @@ const choosingWinner = function () {
     wlText.innerHTML = "you Win!";
     score++;
     userScore.innerHTML = score;
+    body.style.backgroundColor = 
+    "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(89, 100%, 50%) )";
   } else if (
     firstPlayer.lastElementChild.classList.contains("img-1") &&
     secondPlayer.lastElementChild.classList.contains("img-3")
   ) {
     wlText.innerHTML = "You lose!";
+    body.style.backgroundColor = "red";
+    body.style.backgroundImage =
+    "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(0, 93%, 44%) )";
   } else if (
     firstPlayer.lastElementChild.classList.contains("img-3") &&
     secondPlayer.lastElementChild.classList.contains("img-1")
@@ -66,11 +74,16 @@ const choosingWinner = function () {
     wlText.innerHTML = "You Win!";
     score++;
     userScore.innerHTML = score;
+    body.style.backgroundImage =
+    "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(89, 100%, 50%)";
   } else if (
     firstPlayer.lastElementChild.classList.contains("img-2") &&
     secondPlayer.lastElementChild.classList.contains("img-3")
   ) {
     wlText.innerHTML = "You lose!";
+    body.style.backgroundColor = "red";
+    body.style.backgroundImage =
+      "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(0, 93%, 44%) )";
   } else if (
     firstPlayer.lastElementChild.classList.contains("img-2") &&
     secondPlayer.lastElementChild.classList.contains("img-3")
@@ -78,8 +91,12 @@ const choosingWinner = function () {
     wlText.innerHTML = "You Win";
     score++;
     userScore.innerHTML = score;
+    body.style.backgroundImage =
+      "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(89, 100%, 50%) )";
   } else {
     wlText.innerHTML = "TIE!!";
+    body.style.backgroundImage =
+      "linear-gradient(to bottom, hsl(237, 49%, 15%), hsl(16, 13%, 99%) )";
   }
 };
 
@@ -107,6 +124,11 @@ const afterChoosed = function () {
       target.style.position = "absolute";
       center.insertAdjacentElement("beforeend", target);
       secondPlayer.innerHTML = "";
+      body.style.backgroundImage = `linear-gradient(
+        to bottom,
+        hsl(214, 47%, 23%),
+        hsl(237, 49%, 15%)
+      )`;
     });
     choosingWinner();
   });
