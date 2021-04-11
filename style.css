@@ -14,6 +14,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
+  transition: all 0.5s ease-in;
 }
 span {
   font-size: 2rem;
@@ -55,14 +56,15 @@ main {
   cursor: pointer;
   border-radius: 50%;
   background-color: white;
-  padding: 2.1rem;
+  padding: 2rem;
 }
 .circle-1 {
   position: absolute;
   top: -2rem;
   left: -2rem;
   border: 1rem solid hsl(230, 89%, 62%);
-  padding: 2.1rem 2.4rem;
+  padding: 2rem 2.3rem;
+  width: 10rem;
 }
 .circle-2 {
   position: absolute;
@@ -70,7 +72,8 @@ main {
   right: -2rem;
   transform: rotate(15deg);
   border: 1rem solid hsl(39, 89%, 49%);
-  padding: 2.1rem 2.4rem;
+  padding: 2rem 2.3rem;
+  width: 10rem;
 }
 .circle-3 {
   position: absolute;
@@ -78,7 +81,8 @@ main {
   right: 5rem;
   transform: rotate(10deg);
   border: 1rem solid hsl(349, 71%, 52%);
-  padding: 2.2rem;
+  padding: 2.4rem 2.3rem;
+  width: 10rem;
 }
 .rules-footer {
   position: absolute;
@@ -144,16 +148,16 @@ h1 {
   margin-bottom: 1.2rem;
 }
 .result-container {
-  max-width: 70rem;
+  max-width: 100rem;
   height: 60vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  margin: 0 5rem;
+  margin: 0 0 0 2.5rem;
 
   /* For Javascript */
   display: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .first-player {
   max-width: 12rem;
@@ -186,5 +190,21 @@ img {
   .rules-footer {
     position: static;
     float: right;
+    margin-top: 5rem;
+  }
+  .circle-2 {
+    padding: 2rem 2.4rem;
+    width: 10rem;
+    margin-left: 1.5rem;
+  }
+  .circle-1 {
+    padding: 2rem 2.4rem;
+    width: 10rem;
+    margin-left: 1.5rem;
+  }
+  .circle-3 {
+    padding: 2rem 2.2rem;
+    width: 10rem;
+    margin-left: 1rem;
   }
 }
