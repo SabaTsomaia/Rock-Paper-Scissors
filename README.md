@@ -4,4 +4,4 @@
 
 Use As you Want and As you Wish
 
-Made With html & css And pure javascript
+Made With html & css And javascript
